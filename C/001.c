@@ -18,14 +18,14 @@
  */
 
 int main() {
-	const int MAX = 1000;
+	const int MAX = 999;
 	int i, sum = 0;
 	
 	/* In order to determine if a number is or is not multiple of 3 or 5, we just need to do modulo division
 	 * (i.e. to check if is there any remainder after a division) with both of them.
 	 */
 
-	for (i = 1; i < MAX; i++) {
+	for (i = 1; i <= MAX; i++) {
 		if (i % 3 == 0 || i % 5 == 0) {
 			sum += i;
 		}
@@ -37,7 +37,7 @@ int main() {
 	 * Because there are more multiples of 3 than multiples of 5.
 	 */
 	
-	printf("SUM = %d\n", sum);
+	printf("SUM = %d.\n", sum);
 	
 	return 0;
 }
